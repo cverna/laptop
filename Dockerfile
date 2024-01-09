@@ -7,6 +7,8 @@ RUN rpm-ostree install \
         htop \
         iwd \
         libvirt-daemon \
+        libvirt-client \
+        libvirt-daemon-log\
         libvirt-daemon-config-network \
         libvirt-daemon-driver-interface \
         libvirt-daemon-driver-network \
@@ -15,7 +17,9 @@ RUN rpm-ostree install \
         libvirt-daemon-driver-secret \
         libvirt-daemon-driver-storage-core \
         libvirt-dbus \
+        qemu-img \
         qemu-kvm \
+        qemu-system-x86-core\
         sysprof \
         neovim \
 	ffmpeg-free \
@@ -23,7 +27,14 @@ RUN rpm-ostree install \
 	gstreamer1-plugin-openh264 \
 	krb5-workstation \
 	simple-scan \
-	virt-manager \        
+	virt-manager \
+	crun \
+        genisoimage \
+        coreutils \
+        libselinux \
+        shadow-utils \
+        util-linux \
+        virtiofsd \
     && \
     systemctl enable libvirtd.socket && \
     rm -rf /var/lib/unbound/root.key && \
