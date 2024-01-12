@@ -35,6 +35,7 @@ RUN rpm-ostree install \
         shadow-utils \
         util-linux \
         virtiofsd \
+        virt-install \
     && \
     systemctl enable libvirtd.socket && \
     rm -rf /var/lib/unbound/root.key && \
