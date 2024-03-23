@@ -36,6 +36,8 @@ RUN rpm-ostree install \
         util-linux \
         virtiofsd \
         virt-install \
+	libcamera-v4l2.x86_64 \
+	pipewire-v4l2.x86_64 \
     && \
     systemctl enable libvirtd.socket && \
     rm -rf /var/lib/unbound/root.key && \
