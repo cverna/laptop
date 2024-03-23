@@ -5,6 +5,7 @@ env:
   REGISTRY: "quay.io/cverna"
 
 on:
+  workflow_dispatch:
   pull_request:
     branches:
       - main
