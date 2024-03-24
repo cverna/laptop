@@ -3,7 +3,7 @@ FROM quay.io/fedora-ostree-desktops/silverblue:39
 # Keep container image for ~2 months
 LABEL quay.expires-after=8w
 
-RUN curl -o https://copr.fedorainfracloud.org/coprs/zetorian/v4l2loopback/repo/fedora-40/zetorian-v4l2loopback-fedora-40.repo /etc/yum.repos.d/zetorian-v4l2loopback-fedora-40.repo
+RUN curl -o /etc/yum.repos.d/zetorian-v4l2loopback-fedora-40.repo https://copr.fedorainfracloud.org/coprs/zetorian/v4l2loopback/repo/fedora-40/zetorian-v4l2loopback-fedora-40.repo
 
 RUN rpm-ostree install \
         htop \
