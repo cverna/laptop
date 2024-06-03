@@ -1,4 +1,4 @@
-FROM quay.io/fedora-ostree-desktops/silverblue:39
+FROM quay.io/fedora-ostree-desktops/silverblue:40
 
 # Keep container image for ~2 months
 LABEL quay.expires-after=8w
