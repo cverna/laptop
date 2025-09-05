@@ -41,7 +41,6 @@ RUN rpm-ostree install \
 		git \ 
         jq \
 		podman \ 
-        machinectl \
     && \
     systemctl enable libvirtd.socket && \
     rm -rf /var/lib/unbound/root.key && \
