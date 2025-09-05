@@ -22,13 +22,13 @@ RUN rpm-ostree install \
         qemu-system-x86-core\
         sysprof \
         neovim \
-	ffmpeg-free \
-	gnome-tweaks \
-	gstreamer1-plugin-openh264 \
-	krb5-workstation \
-	simple-scan \
-	virt-manager \
-	crun \
+	    ffmpeg-free \
+	    gnome-tweaks \
+	    gstreamer1-plugin-openh264 \
+	    krb5-workstation \
+	    simple-scan \
+	    virt-manager \
+	    crun \
         genisoimage \
         coreutils \
         libselinux \
@@ -37,6 +37,11 @@ RUN rpm-ostree install \
         virtiofsd \
         virt-install \
 		bootc \
+        just \ 
+		git \ 
+        jq \
+		podman \ 
+        machinectl \
     && \
     systemctl enable libvirtd.socket && \
     rm -rf /var/lib/unbound/root.key && \
