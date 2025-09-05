@@ -1,4 +1,4 @@
-FROM quay.io/fedora-ostree-desktops/silverblue:41
+FROM quay.io/fedora-ostree-desktops/silverblue:42
 
 # Keep container image for ~2 months
 LABEL quay.expires-after=8w
@@ -36,6 +36,7 @@ RUN rpm-ostree install \
         util-linux \
         virtiofsd \
         virt-install \
+		bootc \
     && \
     systemctl enable libvirtd.socket && \
     rm -rf /var/lib/unbound/root.key && \
